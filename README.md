@@ -40,7 +40,7 @@ Home/Development/latitudeteste.py --baudrate 921600 --device /dev/ttyACM0
 
 ---
 
-###2. arm.py
+### 2. arm.py
 Este script é usado para armar ou desarmar o drone, preparando-o para voo.
 🔑 Funcionalidades principais:
 
@@ -55,7 +55,7 @@ home/Development/arm.py --baudrate 921600 --device /dev/ttyACM0 --arm 1
 ---
 
 
-###3. movement.py
+### 3. movement.py
 Este script gerencia o movimento do drone, incluindo decolagem e movimentação em coordenadas específicas.
 🔑 Funcionalidades principais:
 
@@ -74,7 +74,7 @@ Ideal para movimentos precisos em missões autônomas.
 ---
 
 
-###4. speed_yaw.py
+### 4. speed_yaw.py
 Este script controla especificamente a orientação do drone.
 🔑 Funcionalidades principais:
 
