@@ -40,7 +40,7 @@ Home/Development/latitudeteste.py --baudrate 921600 --device /dev/ttyACM0
 --baudrate: Taxa de comunicação (ex.: 921600).
 --device: Porta serial do drone (ex.: /dev/ttyACM0).
 ```
-2. arm.py
+###2. arm.py
 Este script é usado para armar ou desarmar o drone, preparando-o para voo.
 🔑 Funcionalidades principais:
 
@@ -52,7 +52,7 @@ home/Development/arm.py --baudrate 921600 --device /dev/ttyACM0 --arm 1
     ```
 --arm: Use 1 para armar o drone ou 0 para desarmá-lo.
 
-3. movement.py
+###3. movement.py
 Este script gerencia o movimento do drone, incluindo decolagem e movimentação em coordenadas específicas.
 🔑 Funcionalidades principais:
 
@@ -68,7 +68,7 @@ yaw_rate: Taxa de variação da orientação.
 A máscara POSITION_TARGET_TYPEMASK é configurada para desativar velocidades e acelerações por padrão.
 Ideal para movimentos precisos em missões autônomas.
 
-4. speed_yaw.py
+###4. speed_yaw.py
 Este script controla especificamente a orientação do drone.
 🔑 Funcionalidades principais:
 
