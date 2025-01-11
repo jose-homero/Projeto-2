@@ -6,9 +6,7 @@ Este repositório contém uma série de scripts em Python para comunicação e c
 
 ## 📂 Estrutura do Repositório
 
-projeto-drones/ 
-├── latitudeteste.py # Configuração de mensagens e leitura de GPS ├── arm.py # Armamento e desarmamento do drone ├── movement.py # Controle de movimento e decolagem ├── speed_yaw.py # Controle de orientação (Yaw) ├── README.md # Documentação do projeto
-
+projeto-drones/ ├── latitudeteste.py # Configuração de mensagens e leitura de GPS ├── arm.py # Armamento e desarmamento do drone ├── movement.py # Controle de movimento e decolagem ├── speed_yaw.py # Controle de orientação (Yaw) ├── README.md # Documentação do projeto
 
 ## 🛠️ Requisitos
 
