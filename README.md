@@ -40,7 +40,7 @@ Home/Development/latitudeteste.py --baudrate 921600 --device /dev/ttyACM0
 
 ---
 
-### 2. arm.py
+### 2. `arm.py`
 Este script é usado para armar ou desarmar o drone, preparando-o para voo.
 🔑 Funcionalidades principais:
 
