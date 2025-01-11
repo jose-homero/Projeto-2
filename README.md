@@ -39,7 +39,7 @@ Este script configura a frequência das mensagens MAVLink e realiza a leitura de
 Home/Development/latitudeteste.py --baudrate 921600 --device /dev/ttyACM0
 --baudrate: Taxa de comunicação (ex.: 921600).
 --device: Porta serial do drone (ex.: /dev/ttyACM0).
-
+```
 2. arm.py
 Este script é usado para armar ou desarmar o drone, preparando-o para voo.
 🔑 Funcionalidades principais:
@@ -47,7 +47,9 @@ Este script é usado para armar ou desarmar o drone, preparando-o para voo.
 Envio do comando MAV_CMD_COMPONENT_ARM_DISARM.
 Confirmação via COMMAND_ACK.
 💻 Comando para execução:
+    ```bash
 home/Development/arm.py --baudrate 921600 --device /dev/ttyACM0 --arm 1
+    ```
 --arm: Use 1 para armar o drone ou 0 para desarmá-lo.
 
 3. movement.py
@@ -73,9 +75,9 @@ Este script controla especificamente a orientação do drone.
 Ajuste do ângulo de orientação (yaw).
 Controle da taxa de variação do ângulo (yaw_rate).
 💻 Comando utilizado no código:
-
+    ```bash
 mavutil.mavlink.MAV_CMD_CONDITION_YAW, 0, angulo, taxa_de_variacao_do_angulo, rotacao, reutilizacao_do_programa, 0, 0, 0
-
+    ```
 📖 Parâmetros importantes:
 
 angulo: Ângulo desejado em graus.
