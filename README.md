@@ -34,7 +34,7 @@ Este script configura a frequência das mensagens MAVLink e realiza a leitura de
 - Verificação de sinais vitais com `wait_heartbeat()`.
 
 **💻 Comando para execução:**
-```bash
+  ```bash
 Home/Development/latitudeteste.py --baudrate 921600 --device /dev/ttyACM0
 --baudrate: Taxa de comunicação (ex.: 921600).
 --device: Porta serial do drone (ex.: /dev/ttyACM0).
