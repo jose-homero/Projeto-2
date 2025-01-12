@@ -49,15 +49,33 @@ Este script é usado para armar ou desarmar o drone, preparando-o para voo.
 
 Envio do comando MAV_CMD_COMPONENT_ARM_DISARM.
 Confirmação via COMMAND_ACK.
+
 💻 Comando para execução:
+
     ```bash
-home/Development/arm.py --baudrate 921600 --device /dev/ttyACM0 --arm 1
+python 3 home/Development/arm.py --baudrate 921600 --device /dev/ttyACM0 --arm 1
     ```
 --arm: Use 1 para armar o drone ou 0 para desarmá-lo.
 
 ---
 
+### `3.takeoff.py`
+Este script gerencia o processo de decolagem do drone utilizando o protocolo MAVLink. Ele permite alterar o modo de voo, armar o drone e realizar a decolagem até uma altitude especificada.
 
+🔑 Funcionalidades principais:
+
+A função takeoff(mav_connection, takeoff_altitude) recebe a Baudrate e a altura de decolagem desejada.
+
+  Comando para decolar 10cm:
+  
+  ```bash
+  python3 Home/Development/takeoff.py --baudrate 921600 --device /dev/ttyACM0 --takeoff-altitude -0.1
+  ```
+  Aterrisagem:
+```bash
+  python3 Home/Development/takeoff.py --baudrate 921600 --device /dev/ttyACM0 --takeoff-altitude --land
+  ```
+---
 ### 3. `movement.py`
 Este script gerencia o movimento do drone, incluindo decolagem e movimentação em coordenadas específicas.
 
@@ -73,20 +91,20 @@ yaw_rate: Taxa de variação da orientação.
 
 📖 Observações:
 
-A máscara POSITION_TARGET_TYPEMASK é configurada para desativar velocidades e acelerações por padrão.
-Ideal para movimentos precisos em missões autônomas.
+A máscara POSITION_TARGET_TYPEMASK pode ser configurada para desativar velocidades e acelerações por padrão.
+O que é ideal para movimentos precisos em missões autônomas.
 
 ---
 
-
 ### 4. `speed_yaw.py`
 Este script controla especificamente a orientação do drone.
+
 🔑 Funcionalidades principais:
 
 Ajuste do ângulo de orientação (yaw).
 Controle da taxa de variação do ângulo (yaw_rate).
 
-💻 Comando utilizado no código:
+💻 Função utilizada no código:
     ```bash
 mavutil.mavlink.MAV_CMD_CONDITION_YAW, 0, angulo, taxa_de_variacao_do_angulo, rotacao, reutilizacao_do_programa, 0, 0, 0
     ```
