@@ -35,7 +35,7 @@ Este script configura a frequência das mensagens MAVLink e realiza a leitura de
 
 **💻 Comando para execução:**
   ```bash
-Home/Development/latitudeteste.py --baudrate 921600 --device /dev/ttyACM0
+python3 Home/Development/latitudeteste.py --baudrate 921600 --device /dev/ttyACM0
 --baudrate: Taxa de comunicação (ex.: 921600).
 --device: Porta serial do drone (ex.: /dev/ttyACM0).
 ```
@@ -66,7 +66,8 @@ Este script gerencia o processo de decolagem do drone utilizando o protocolo MAV
 
 A função takeoff(mav_connection, takeoff_altitude) recebe a Baudrate e a altura de decolagem desejada.
 
-  Comando para decolar 10cm:
+**💻 Comando para execução:**
+  Decolar 10cm:
   
   ```bash
   python3 Home/Development/takeoff.py --baudrate 921600 --device /dev/ttyACM0 --takeoff-altitude -0.1
@@ -88,6 +89,13 @@ Movimento em coordenadas definidas (x, y, z) no frame MAV_FRAME_LOCAL_NED.
 x, y, z: Coordenadas de destino.
 yaw: Ângulo de orientação do drone.
 yaw_rate: Taxa de variação da orientação.
+
+**💻 Comando para execução:**
+  ```bash
+python3 Home/Development/movement.py --baudrate 921600 --device /dev/ttyACM0
+--baudrate: Taxa de comunicação (ex.: 921600).
+--device: Porta serial do drone (ex.: /dev/ttyACM0).
+```
 
 📖 Observações:
 
@@ -115,6 +123,14 @@ angulo: Ângulo desejado em graus.
 taxa_de_variacao_do_angulo: Velocidade de rotação em graus/segundo.
 rotacao: Direção da rotação (1 para horário, -1 para anti-horário).
 reutilizacao_do_programa: Permite reusar o comando (1 ativado, 0 desativado).
+
+**💻 Comando para execução:**
+
+  ```bash
+python3 Home/Development/speed_yaw.py --baudrate 921600 --device /dev/ttyACM0
+--baudrate: Taxa de comunicação (ex.: 921600).
+--device: Porta serial do drone (ex.: /dev/ttyACM0).
+```
 
 🚀 Como Executar os Scripts
 
