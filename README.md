@@ -50,7 +50,7 @@ Este script é usado para armar ou desarmar o drone, preparando-o para voo.
 Envio do comando MAV_CMD_COMPONENT_ARM_DISARM.
 Confirmação via COMMAND_ACK.
 💻 Comando para execução:
-```bash
+    ```bash
 home/Development/arm.py --baudrate 921600 --device /dev/ttyACM0 --arm 1
     ```
 --arm: Use 1 para armar o drone ou 0 para desarmá-lo.
